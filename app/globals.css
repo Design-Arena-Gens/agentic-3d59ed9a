@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 12px;
+}
+
+body {
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply container-padding max-w-7xl mx-auto;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-primary-600 text-white px-5 py-3 font-medium shadow-soft hover:bg-primary-700 transition;
+}
+
+.btn-outline {
+  @apply inline-flex items-center justify-center rounded-xl border border-gray-300 px-5 py-3 font-medium text-gray-900 hover:bg-gray-50 transition;
+}
+
+.card {
+  @apply rounded-2xl border border-gray-100 shadow-soft bg-white;
+}
